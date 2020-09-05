@@ -5,7 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "serve-staging": "vue-cli-service serve --mode staging",
+    "build-staging": "vue-cli-service build --mode staging",
+    "deploy-staging": "yarn build-staging && firebase use c2g-consulting && firebase deploy --only hosting"
   },
   "dependencies": {
     "core-js": "^3.6.5",
