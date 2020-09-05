@@ -1,7 +1,7 @@
 /*eslint-disable no-async-promise-executor */
 import firebase from 'firebase';
-// const url = process.env.VUE_APP_SERVER;
-const url = "http://localhost:5000/c2g-consulting/us-central1/c2gLicences";
+const url = process.env.VUE_APP_SERVER;
+// const url = "http://localhost:5000/c2g-consulting/us-central1/c2gLicences";
 // const url = "https://41419370cb52.ngrok.io/ajo-dev/us-central1/api";
 
 const getUserDets = () => firebase.auth().currentUser.uid;
@@ -20,7 +20,7 @@ class asc {
           headers: {
             "Content-type": "application/json",
             Accept: "application/json",
-            // role: `${process.env.VUE_APP_COMPANY_ID === "undefined" ? }`
+            // company: `${process.env.VUE_APP_COMPANY_ID === "undefined" ? }`
             // mode: "no-cors",
             // 'Content-Type': 'application/x-www-form-urlencoded',
           },

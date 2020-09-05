@@ -1,38 +1,18 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="black"
-      dark
-    >
-      <div class="d-flex align-center">
-        <Logo />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/codefingas/c2g-consulting"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Github</span>
-        <v-icon>mdi-github</v-icon>
-      </v-btn>
-    </v-app-bar>
-
+    <Navbar />
     <v-main>
-        <router-view></router-view>
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Logo from "./components/Resources/logo";
+import Navbar from "./components/Resources/Navbar";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Logo
+    Navbar
   },
   data: () => ({
     //
